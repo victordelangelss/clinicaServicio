@@ -57,7 +57,7 @@ public class ClinicaController {
 		return service.buscarMedicos(numero);
 	}
 	
-	@GetMapping("buscarTodo")
+	@GetMapping("buscarTodo/{numero}")
 	public ResponseEntity<?> buscarTodo(@PathVariable("numero") long numero){
 		return service.buscarTodo(numero);
 	}
